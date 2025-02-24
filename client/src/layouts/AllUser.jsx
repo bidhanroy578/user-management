@@ -43,7 +43,7 @@ const AllUser = () => {
 
 
     return (
-        <div className=' max-w-7xl px-16 mt-16 space-y-8 '>
+        <div className=' max-w-7xl md:px-16 mt-16 space-y-8 '>
             <Link to='/new-user' className='flex w-fit items-center gap-2 bg-green-100 px-5 py-2 rounded hover:scale-105 active:scale-95 transition-[scale]'>New User <FaUser /></Link>
             <table className='table-auto w-full text-center'>
                 <thead>

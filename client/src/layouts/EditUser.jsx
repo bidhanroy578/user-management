@@ -63,7 +63,7 @@ const EditUser = () => {
         });
     }
     return (
-        <div className=' max-w-7xl px-16 mt-16 space-y-8 '>
+        <div className=' max-w-7xl md:px-16 mt-16 space-y-8 '>
             <Link to='/' className=' w-fit flex items-center gap-2 bg-green-100 px-5 py-2 rounded hover:scale-105 active:scale-95 transition-[scale]'><FaAngleDoubleLeft /> All Users</Link>
             <div className="text-center">
                 <h3 className=" text-3xl font-medium">Update User</h3>
