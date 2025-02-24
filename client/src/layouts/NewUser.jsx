@@ -23,7 +23,7 @@ const NewUser = () => {
             confirmButtonText: "Yes, create it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:3000/users`, {
+                fetch(`https://user-management-server-lyart.vercel.app/users`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

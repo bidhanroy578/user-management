@@ -9,7 +9,7 @@ const EditUser = () => {
     const [user, setUser] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:3000/users/${id}`)
+        fetch(`https://user-management-server-lyart.vercel.app/users/${id}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -34,7 +34,7 @@ const EditUser = () => {
             confirmButtonText: "Yes, Update!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:3000/users/${id}`, {
+                fetch(`https://user-management-server-lyart.vercel.app/users/${id}`, {
                     method: 'put',
                     headers: {
                         'Content-Type': 'application/json'
