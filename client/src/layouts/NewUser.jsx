@@ -11,7 +11,7 @@ const NewUser = () => {
         const gender = form.gender.value;
         const status = form.status.value;
         const newUser = { name, email, gender, status }
-        console.log(newUser)
+        // console.log(newUser)
 
 
         Swal.fire({

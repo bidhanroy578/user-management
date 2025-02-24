@@ -5,17 +5,17 @@ import Swal from "sweetalert2";
 
 const EditUser = () => {
     const { id } = useParams()
-    console.log(id)
+    // console.log(id)
     const [user, setUser] = useState({})
 
     useEffect(() => {
         fetch(`http://localhost:3000/users/${id}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 setUser(data)
             })
-    }, [])
+    }, [id])
     const handleSubmit = (e) => {
         e.preventDefault();
         const form = e.target
@@ -24,7 +24,7 @@ const EditUser = () => {
         const gender = form.gender.value;
         const status = form.status.value;
         const newUser = { name, email, gender, status }
-        console.log(newUser)
+        // console.log(newUser)
         Swal.fire({
             title: "Are you sure?",
             icon: "warning",
