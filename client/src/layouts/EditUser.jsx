@@ -66,8 +66,8 @@ const EditUser = () => {
         <div className=' max-w-7xl px-16 mt-16 space-y-8 '>
             <Link to='/' className=' w-fit flex items-center gap-2 bg-green-100 px-5 py-2 rounded hover:scale-105 active:scale-95 transition-[scale]'><FaAngleDoubleLeft /> All Users</Link>
             <div className="text-center">
-                <h3 className=" text-3xl font-medium">New User</h3>
-                <p>Use the form bellow to create a new user</p>
+                <h3 className=" text-3xl font-medium">Update User</h3>
+                <p>Use the form bellow to Update user details</p>
             </div>
             <form onSubmit={handleSubmit} className="max-w-[70%] mx-auto">
                 <div className="mb-4">
@@ -100,7 +100,7 @@ const EditUser = () => {
                         <label htmlFor="inactive">inactive</label>
                     </div>
                 </div>
-                <input type="submit" value="Save" className="mt-4 w-full font-bold flex items-center gap-2 bg-green-100 px-5 py-2 rounded hover:scale-105 active:scale-95 transition-[scale]" />
+                <input type="submit" value="Update" className="mt-4 w-full font-bold flex items-center gap-2 bg-green-100 px-5 py-2 rounded hover:scale-105 active:scale-95 transition-[scale]" />
             </form>
         </div>
     );
